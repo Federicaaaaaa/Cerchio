@@ -15,7 +15,8 @@ namespace Cerchio
 
             Console.WriteLine("Area: {0}", c.AreaCerchio());
             Console.WriteLine("Circonferenza: {0}", c.Circonferenza());
-            Console.WriteLine(c.ToString());
+            c = null;
+            Console.WriteLine(c);
 
             Console.ReadLine();
         }
