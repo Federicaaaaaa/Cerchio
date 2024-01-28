@@ -9,6 +9,8 @@ namespace Cerchio
     internal class Cerchio
     {
         public float Raggio { get; set; }
+
+        
         public float AreaCerchio()
         {
             return (float)(Raggio * Raggio * Math.PI);
@@ -20,6 +22,14 @@ namespace Cerchio
         public override string ToString()
         {
             return string.Format("Cerchio di raggio {0}", Raggio);
+        }
+
+        public static Cerchio Parse(string circle)
+        {
+            string[] subs = circle.Split(' ', ' ', ' ');
+            Cerchio cerchio = new Cerchio();
+            cerchio.Raggio = float.Parse(subs[3]);
+            return cerchio;
         }
     }
 }

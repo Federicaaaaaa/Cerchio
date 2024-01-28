@@ -15,8 +15,13 @@ namespace Cerchio
 
             Console.WriteLine("Area: {0}", c.AreaCerchio());
             Console.WriteLine("Circonferenza: {0}", c.Circonferenza());
-            c = null;
+            //se c = null;
+            //allora con Console.WriteLine(c) non stampa niente e non dà errore
             Console.WriteLine(c);
+
+            Cerchio cparse;
+            cparse = Cerchio.Parse(c.ToString());
+            Console.WriteLine(cparse);
 
             Console.ReadLine();
         }
