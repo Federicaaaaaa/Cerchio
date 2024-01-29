@@ -26,7 +26,7 @@ namespace Cerchio
 
         public static Cerchio Parse(string circle)
         {
-            string[] subs = circle.Split(' ', ' ', ' ');
+            string[] subs = circle.Split(' ');
             Cerchio cerchio = new Cerchio();
             cerchio.Raggio = float.Parse(subs[3]);
             return cerchio;
