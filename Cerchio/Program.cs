@@ -19,9 +19,9 @@ namespace Cerchio
             //allora con Console.WriteLine(c) non stampa niente e non dà errore
             Console.WriteLine(c);
 
-            Cerchio cparse;
-            cparse = Cerchio.Parse(c.ToString());
-            Console.WriteLine(cparse);
+            Cerchio cParse;
+            cParse = Cerchio.Parse(c.ToString());
+            Console.WriteLine(cParse);
 
             Console.ReadLine();
         }
